@@ -1,2 +1,1 @@
-#!/bin/bash
-Hello ktallaris
+echo "Hello ktallaris"
