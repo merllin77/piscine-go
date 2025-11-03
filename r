@@ -1,1 +1,1 @@
-echo R > r
+printf "R\n" > r
