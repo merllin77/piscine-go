@@ -1,0 +1,34 @@
+Git Bash Commands
+
+* | git config --global credential.helper store -->  tell Git to remember your password (like a web browser would)
+* | git clone https://platform.zone01.gr/git/ktallaris/piscine-go.git  --> clone respositery
+* | chmod +x file.sh --> make a file executable
+* | ./file.sh --> Run file
+* | curl -s https://webfile_path/filejson \  --> downloads silently a JSON file from the web.
+    • | -k --> -k or --insecure ignores SSL certificate issues.
+* | “\” --> just split command across multiple lines for readability
+* | “|” --> It takes the output of one command and feeds it as the input to another command. 
+    (eg: curl -s https://platform.zone01.gr/assets/superhero/all.json | jq '.[] | .name') --> The | pipe sends that JSON directly to jq.
+* | ls --> directory list (ignoring hidden (.) files)
+    • | -1 --> vertically output
+    • | paste -sd ‘,’ --> separate files with delimeter (d) commas (,)
+    • | -t --> indexing by accessing time (-r for reverse order)
+* | tr ‘,’ ‘;’ --> change the delimeter (eg from commas (,) to semicolon (;)) in jq command for JSON files
+* | wc-l --> (word count) counts lines, words, and characters in files or input.
+* | find --> search for files and directories in a directory hierarchy
+    • | . --> Searches for a file in the current directory and subdirectories.
+    • | -type d → directories
+    • | -type f → regular files
+* | printf --> print command. Unlike echo, printf allows you to control the format of the output precisely (number of decimals, padding, alignment, etc.).
+    • | %f → formats a number as a floating-point decimal (default 6 decimal places if not specified)
+    • | \n → newline character (moves the cursor to the next line)
+* | sort --> ταξινόμηση με αλφαβητική σειρά
+    • | -r --> αντιστροφη ταξινόμηση
+* | sed -->  stream editor. Used to search, replace, insert, or delete text from input (files or pipelines). Works line by line
+    • | s --> substitute command in sed. (s/pattern/replacement/) Replaces the first match of pattern with replacement on each line. Eg. \.sh$ 
+    • | \. → matches a literal dot (.) Dot . normally matches any character in regex, so we escape it with \
+    • | sh → matches the letters sh
+    • | $ → matches end of the line
+    • | so \.sh$ = “.sh” at the end of a line
+    • | . // --> (empty replacement) Means: replace the matched pattern with nothing. Effectively removes .sh at the end of a line
+    
