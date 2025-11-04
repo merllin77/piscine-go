@@ -1,1 +1,1 @@
-find . -type f ! -name "*.sh" -printf "%f\n" | sort -rz
+find . -type f ! -name "*.sh" -printf "%f\n" | sort -r
