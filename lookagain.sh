@@ -1,1 +1,1 @@
-find . -type f ! -name "*.sh" | sort -r
+find . -type f ! -name "*.sh" -exec basename {} \; | sort -r
