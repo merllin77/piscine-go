@@ -1,5 +1,6 @@
-* |                               Git Bash Commands
-
+* |                                             Git Bash Commands
+_________________________________________________________________________________________________________________________________________________________
+* |
 * | git config --global credential.helper store -->  tell Git to remember your password (like a web browser would)
 * | git clone https://platform.zone01.gr/git/ktallaris/piscine-go.git  --> clone respositery
 * | chmod +x file.sh --> make a file executable
