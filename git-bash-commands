@@ -36,4 +36,4 @@ ________________________________________________________________________________
     • | n → read the next line (skip the current one)
     • | d → delete the current line
     • | -n option → “silent mode,” only print what you explicitly tell it to with p
-    
+* | --quoting-style=shell-escape --> tells ls how to safely display filenames           Eg. "shell-escape" Escapes all special characters with backslashes (\) instead of quoting
