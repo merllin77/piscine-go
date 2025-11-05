@@ -31,5 +31,9 @@ ________________________________________________________________________________
     • | sh → matches the letters sh
     • | $ → matches end of the line
     • | so \.sh$ = “.sh” at the end of a line
-    • | . // --> (empty replacement) Means: replace the matched pattern with nothing. Effectively removes .sh at the end of a line
+    • | . // --> (empty replacement) Means: replace the matched pattern with nothing.   Effectively removes .sh at the end of a line
+    • | p → print the current line
+    • | n → read the next line (skip the current one)
+    • | d → delete the current line
+    • | -n option → “silent mode,” only print what you explicitly tell it to with p
     
