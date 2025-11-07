@@ -1,15 +1,15 @@
 package student
 
-var div int
-var mod int
-var da int
-var db int
+var (
+	div int
+	mod int
+	da  int
+	db  int
+)
 
 func UltimateDivMod(a *int, b *int) {
 	da = *a
 	db = *b
-	div = da / db
-	mod = da % db
-	*a = div
-	*b = mod
+	*a = da / db
+	*b = da % db
 }
