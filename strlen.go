@@ -6,6 +6,5 @@ func StrLen(s string) int {
 	for i := 1; i <= len(s); i++ {
 		cnt++
 	}
-	println('\n')
 	return cnt
 }
