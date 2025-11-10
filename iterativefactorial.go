@@ -1,11 +1,11 @@
 package student
 
 func IterativeFactorial(nb int) int {
-	rslt := nb
+	rslt := 1
 	if nb == 0 {
 		return 1
 	} else if nb > 0 {
-		for i := nb - 1; i >= 1; i-- {
+		for i := 1; i <= nb; i++ {
 			rslt = rslt * i
 		}
 		return rslt
