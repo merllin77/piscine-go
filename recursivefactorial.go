@@ -1,7 +1,6 @@
 package student
 
 func RecursiveFactorial(nb int) int {
-
 	if nb < 0 {
 		return 0
 	}
