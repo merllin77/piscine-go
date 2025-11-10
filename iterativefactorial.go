@@ -6,7 +6,7 @@ func IterativeFactorial(nb int) int {
 		return 1
 	} else if nb > 0 {
 		for i := 1; i <= nb; i++ {
-			if result > 0 && result > 1<<63/i {
+			if rslt > 0 && rslt > 1<<63/i {
 				return 0
 			}
 			rslt = rslt * i
