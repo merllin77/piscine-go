@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package student
 
 func IsPrime(nb int) bool { // vriskei tous protous arithmous mexri to nb
 	if nb <= 1 {
@@ -19,21 +17,14 @@ func IsPrime(nb int) bool { // vriskei tous protous arithmous mexri to nb
 	}
 	return true
 }
-
 func FindNextPrime(nb int) int {
 	if nb <= 1 {
 		return 2
 	}
-
 	for {
-		if IsPrime(nb) {
+		if IsPrime(nb) == true {
 			return nb
 		}
 		nb++
 	}
-}
-
-func main() {
-	fmt.Println(FindNextPrime(1000))
-	fmt.Println(FindNextPrime(0))
 }
