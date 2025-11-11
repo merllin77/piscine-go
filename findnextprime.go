@@ -1,6 +1,6 @@
 package student
 
-func IsPrime(nb int) bool { // vriskei tous protous arithmous mexri to nb
+/*func IsPrime(nb int) bool { // vriskei tous protous arithmous mexri to nb
 	if nb <= 1 {
 		return false
 	}
@@ -16,7 +16,7 @@ func IsPrime(nb int) bool { // vriskei tous protous arithmous mexri to nb
 		}
 	}
 	return true
-}
+}*/
 
 func FindNextPrime(nb int) int {
 	if nb <= 1 {
