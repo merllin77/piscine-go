@@ -17,6 +17,7 @@ func IsPrime(nb int) bool { // vriskei tous protous arithmous mexri to nb
 	}
 	return true
 }
+
 func FindNextPrime(nb int) int {
 	if nb <= 1 {
 		return 2
