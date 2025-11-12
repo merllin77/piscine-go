@@ -2,6 +2,9 @@ package student
 
 func Index(s string, toFind string) int {
 	totallen := len(s) - len(toFind)
+	if toFind == "" {
+		return 0
+	}
 	for i := 0; i <= totallen; i++ {
 		for j := 0; j < len(toFind); j++ {
 			if s[i+j] != toFind[j] {
