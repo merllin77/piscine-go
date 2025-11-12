@@ -7,7 +7,7 @@ func Index(s string, toFind string) int {
 			if s[i+j] != toFind[j] {
 				break
 			}
-			if j == len(toFind) {
+			if j == len(toFind)-1 {
 				return i
 			}
 		}
