@@ -6,7 +6,8 @@ func Index(s string, toFind string) int {
 		for j := 0; j < len(toFind); j++ {
 			if s[i+j] != toFind[j] {
 				break
-			} else {
+			}
+			if j == len(toFind) {
 				return i
 			}
 		}
