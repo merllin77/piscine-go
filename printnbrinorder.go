@@ -20,7 +20,6 @@ func PrintNbrInOrder(n int) {
 
 	for i := 0; i <= 9; i++ { // goes through all possible digits from 0-9 (as digits)
 		for counterar[i] > 0 { // print the digit if the i EXISTS in counterar and is bigger than 0 (if there is a digit with zero counter skips the loop)
-			// z01.print(i)
 			z01.PrintRune(rune('0' + i))
 			counterar[i]-- // brings the value back to 0 to exit loop (for counterar[i])
 		}
