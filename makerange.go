@@ -1,4 +1,4 @@
-package main
+package student
 
 func MakeRange(min, max int) []int {
 	if min >= max {
