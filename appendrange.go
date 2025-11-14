@@ -2,7 +2,7 @@ package student
 
 func AppendRange(min, max int) []int {
 	arlen := max - min
-	if arlen < 0 {
+	if arlen <= 0 {
 		return []int{}
 	} else {
 		ar := make([]int, arlen)
