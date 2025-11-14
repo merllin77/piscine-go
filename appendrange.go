@@ -10,5 +10,4 @@ func AppendRange(min, max int) []int {
 		ar[i] = min + i
 	}
 	return ar
-
 }
