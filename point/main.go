@@ -14,11 +14,11 @@ func setPoint(ptr *point) {
 	ptr.y = 21
 }
 
-func printXval(nx int) {
-	if nx >= 10 {
-		printXval(nx / 10)
+func printXval(nx int) { // transpose int x from ptr.x to a rune
+	if nx >= 10 { // if int x has more than 1 digit
+		printXval(nx / 10) // recursion of printXval printing all digits except last (/10 moves left of nx)
 	}
-	z01.PrintRune(rune(nx%10 + '0'))
+	z01.PrintRune(rune(nx%10 + '0')) // print last digit as a rune (with +'0')
 }
 
 func printYval(ny int) {
