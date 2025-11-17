@@ -29,5 +29,5 @@ func main() {
 	if err != nil {
 		fmt.Println("Error reading files", err)
 	}
-	fmt.Println(string(content)) // transpose bytes to string for output
+	fmt.Print(string(content)) // transpose bytes to string for output
 }
