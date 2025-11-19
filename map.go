@@ -31,7 +31,7 @@ func Map(f func(int) bool, a []int) []bool {
 		}
 	}
 	return rsltbool
-} //End of Map
+}
 
 func main() {
 	a := []int{1, 2, 3, 4, 5, 6, 13}
