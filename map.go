@@ -3,7 +3,6 @@ package student
 import "fmt"
 
 func IsPrime(nbr int) bool {
-
 	if nbr <= 1 { // 1 is not a Prime
 		return false
 	}
