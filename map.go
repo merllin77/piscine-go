@@ -1,8 +1,6 @@
 package student
 
-import "fmt"
-
-func IsPrime(nbr int) bool {
+/*func IsPrime(nbr int) bool {
 	if nbr <= 1 { // 1 is not a Prime
 		return false
 	}
@@ -21,7 +19,7 @@ func IsPrime(nbr int) bool {
 		}
 	}
 	return true
-}
+} // End of IsPrime */
 
 func Map(f func(int) bool, a []int) []bool {
 	rsltbool := []bool{}
@@ -33,10 +31,10 @@ func Map(f func(int) bool, a []int) []bool {
 		}
 	}
 	return rsltbool
-}
+} //End of Map
 
 func main() {
 	a := []int{1, 2, 3, 4, 5, 6, 13}
 	result := Map(IsPrime, a)
-	fmt.Println(result)
+	println(result)
 }
