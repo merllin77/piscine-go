@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package student
 
 func ShoppingSummaryCounter(str string) map[string]int {
 	summary := make(map[string]int)
@@ -20,9 +18,9 @@ func ShoppingSummaryCounter(str string) map[string]int {
 	return summary
 }
 
-func main() {
-	summary := "Burger Water Carrot Coffee Water Water Chips Carrot Carrot Burger Carrot Water"
-	for index, element := range ShoppingSummaryCounter(summary) {
-		fmt.Println(index, "=>", element)
-	}
-}
+// func main() {
+// 	summary := "Burger Water Carrot Coffee Water Water Chips Carrot Carrot Burger Carrot Water"
+// 	for index, element := range ShoppingSummaryCounter(summary) {
+// 		fmt.Println(index, "=>", element)
+// 	}
+//}
