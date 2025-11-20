@@ -1,4 +1,4 @@
-module piscine
+module student
 
 go 1.24.9
 
