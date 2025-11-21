@@ -1,14 +1,27 @@
 package student
 
-import "fmt"
+func Compare(n1, n2 int) int {
 
-func InOrder(n1 []int) int {
-	for i := 0; i < len(n1)-1; i++ {
-		if n1[i] < n1[i+1] {
-			fmt.Println("SORTED !!")
-			return 1
+	if n1 > n2 {
+		return 1
+	}
+	if n1 == n2 {
+		return 0
+	}
+	return -1
+}
+
+func IsSorted(f func(a, b int) int, a []int) bool {
+	isAsc := true
+	isDesc := true
+
+	for i := 0; i < len(a)-1; i++ {
+		if f(a[i], a[i+1]) > 0 { // a[i] > a[i+1]
+			isAsc = false
+		}
+		if f(a[i], a[i+1]) < 0 { // a[i] < a[i+1]
+			isDesc = false
 		}
 	}
-	fmt.Println("Not sorted")
-	return -1
+	return isAsc || isDesc
 }
