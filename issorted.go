@@ -1,6 +1,6 @@
 package student
 
-func Compare(n1, n2 int) int {
+func Compare2nbr(n1, n2 int) int {
 
 	if n1 > n2 {
 		return 1
