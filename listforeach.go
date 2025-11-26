@@ -1,15 +1,17 @@
 package student
 
+
 func ListForEach(l *List, f func(*NodeL)) {
-    if l==nil || l.Head == nil{
-        return 
-    }
-    currentNode:=l.Head
-    for currentNode != nil {
-        f(currentNode)  
-        currentNode=currentNode.Next
-    }
+	if l == nil || l.Head == nil {
+		return
+	}
+	currentNode := l.Head
+	for currentNode != nil {
+		f(currentNode)
+		currentNode = currentNode.Next
+	}
 }
+
 func Add2_node(node *NodeL) {
 	switch node.Data.(type) {
 	case int:
