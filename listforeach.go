@@ -1,6 +1,5 @@
 package student
 
-
 func ListForEach(l *List, f func(*NodeL)) {
 	if l == nil || l.Head == nil {
 		return
