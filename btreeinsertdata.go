@@ -28,6 +28,7 @@ func BTreeInsertData(root *TreeNode, data string) *TreeNode {
 			}
 			currentNode = currentNode.Right
 		} else {
+			// Duplicate: do nothing
 			return root
 		}
 	}
