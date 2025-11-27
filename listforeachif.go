@@ -11,7 +11,6 @@ package student
 // }
 
 func ListForEachIf(l *List, f func(*NodeL), cond func(*NodeL) bool) {
-	//current := l.Head
 	if l == nil || l.Head == nil {
 		return
 	}
@@ -25,7 +24,10 @@ func ListForEachIf(l *List, f func(*NodeL), cond func(*NodeL) bool) {
 func IsPositiveNode(node *NodeL) bool {
 	switch node.Data.(type) {
 	case int, float32, float64, byte:
-		return node.Data.(int) > 0
+		if node.Data.(int) > 0 {
+			return true
+		}
+		return false
 	default:
 		return false
 	}
