@@ -12,18 +12,18 @@ package student
 // }
 
 // BTreeInsertData inserts a new node with the given data into the BST
-func BTreeInsertData(root *TreeNode, data string) *TreeNode {
-	if root == nil {
-		return &TreeNode{Data: data}
-	}
-	if data < root.Data {
-		root.Left = BTreeInsertData(root.Left, data)
-	} else if data > root.Data {
-		root.Right = BTreeInsertData(root.Right, data)
-	}
-	// If equal, do nothing (or you could allow duplicates on one side)
-	return root
-}
+// func BTreeInsertData(root *TreeNode, data string) *TreeNode {
+// 	if root == nil {
+// 		return &TreeNode{Data: data}
+// 	}
+// 	if data < root.Data {
+// 		root.Left = BTreeInsertData(root.Left, data)
+// 	} else if data > root.Data {
+// 		root.Right = BTreeInsertData(root.Right, data)
+// 	}
+// 	// If equal, do nothing (or you could allow duplicates on one side)
+// 	return root
+// }
 
 // BTreeApplyInorder applies function f to each node in in-order traversal
 func BTreeApplyInorder(root *TreeNode, f func(...interface{}) (int, error)) {
