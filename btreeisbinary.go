@@ -32,21 +32,21 @@ func BTreeIsBinary(root *TreeNode) bool {
 }
 
 // // Helper function to check BST property with valid range
-// func isBST(node *TreeNode, min *string, max *string) bool {
-// 	if node == nil {
-// 		return true
-// 	}
+func isBST(node *TreeNode, min *string, max *string) bool {
+	if node == nil {
+		return true
+	}
 
-// 	// Check current node against min and max bounds
-// 	if (min != nil && node.Data <= *min) || (max != nil && node.Data >= *max) {
-// 		return false
-// 	}
+	// Check current node against min and max bounds
+	if (min != nil && node.Data <= *min) || (max != nil && node.Data >= *max) {
+		return false
+	}
 
-// 	// Left subtree: all values must be < node's value
-// 	// Right subtree: all values must be > node's value
-// 	return isBST(node.Left, min, &node.Data) &&
-// 		isBST(node.Right, &node.Data, max)
-// }
+	// Left subtree: all values must be < node's value
+	// Right subtree: all values must be > node's value
+	return isBST(node.Left, min, &node.Data) &&
+		isBST(node.Right, &node.Data, max)
+}
 
 // func main() {
 // 	// Test 1: Valid BST
