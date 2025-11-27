@@ -45,13 +45,13 @@ package student
 // }
 
 // // Helper function to find the minimum value node in a subtree
-// func minValueNode(node *TreeNode) *TreeNode {
-// 	current := node
-// 	for current.Left != nil {
-// 		current = current.Left
-// 	}
-// 	return current
-// }
+func minValueNode(node *TreeNode) *TreeNode {
+	current := node
+	for current.Left != nil {
+		current = current.Left
+	}
+	return current
+}
 
 // BTreeDeleteNode deletes the given node from the BST and returns the new root
 func BTreeDeleteNode(root, node *TreeNode) *TreeNode {
